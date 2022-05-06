@@ -28,7 +28,6 @@ const AudioPlayer = ({ track, image }) => {
 
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
-        // toNextTrack();
       } else {
         setTrackProgress(audioRef.current.currentTime);
       }
@@ -62,8 +61,10 @@ const AudioPlayer = ({ track, image }) => {
   // Handles cleanup and setup when changing tracks
   useEffect(() => {
     audioRef.current.pause();
-
+    localStorage.setItem(audioRef.current.src, audioRef.current.currentTime);
     audioRef.current = new Audio(audioSrc);
+    const loadedTime = +localStorage.getItem(audioRef.current.src)
+    audioRef.current.currentTime = loadedTime || audioRef.current.currentTime
     setTrackProgress(audioRef.current.currentTime);
 
     if (isReady.current) {
@@ -75,6 +76,7 @@ const AudioPlayer = ({ track, image }) => {
       isReady.current = true;
     }
   }, [audioSrc]);
+
   function formatSeconds(secs) {
     var hr = Math.floor(secs / 3600);
     var min = Math.floor((secs - hr * 3600) / 60);
