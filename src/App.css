@@ -1,0 +1,215 @@
+.audio-book-player {
+  background-color: #f7f7f7;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 1352px;
+  margin: 0 auto;
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.tabs {
+  display: flex;
+  background-color: #fff;
+  height: 80px;
+  align-items: center;
+  border-bottom: solid 2px #f7f7f7;
+  padding-left: 24px;
+}
+.tabs > * {
+  font-family: SFProDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+  margin: 0px 40px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 140px;
+  justify-content: center;
+}
+
+.tabs > .selected {
+  border-bottom: solid 3px #3c8de4;
+}
+
+.tabs > div:first-child {
+  margin-left: 0px;
+}
+
+.lock{
+  margin-left: 12px;
+}
+.tab-section {
+  width: 60%;
+  padding: 40px;
+}
+.title-content  {
+  font-family: Georgia;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+.content {
+  font-family: Georgia;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+}
+.audio-section {
+  background-color: #f9f9f9;
+  width: 30%;
+  padding: 50px;
+}
+
+.audio-title {
+  font-family: SFProDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+  margin-bottom: 12px;
+}
+
+.audio-player {
+  padding: 36.5px 125.3px 32.1px 20.2px;
+  border-radius: 15px;
+  box-shadow: -7px 7px 20px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to top, #262626 1%, #4d4d4d 98%);
+  margin-bottom: 70px;
+  position: relative;
+  height: 86px;
+  width: 290px;
+}
+.audio-book-content {
+
+}
+
+.audio-book-content-title{
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+}
+.audio-book-content-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.audio-book-content-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: SFProDisplay;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+  cursor: pointer;
+}
+.audio-book-content-item > .number {
+  margin-right: 12px;
+  font-family: SFProDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a4649;
+}
+
+.play,.pause {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  color:#008deb;
+  margin-right: 10px;
+}
+
+.progress {
+  margin-right: 8px;
+  width: 160px;
+}
+
+.title {
+  font-family: SFProDisplay;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  text-align: center;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+.track-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork {
+  width: 116px;
+  height: 181px;
+  position: absolute;
+  top: -46px;
+  right: 15px;
+  object-fit: cover;
+}
+
+.duration {
+  font-family: SFProDisplay;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8f95a3;
+}
